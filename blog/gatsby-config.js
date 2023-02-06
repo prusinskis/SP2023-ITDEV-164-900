@@ -16,8 +16,8 @@ module.exports = {
     contact: {
       name: `Sherise Prusinski`,
       company: `Blogs Inc.`,
-      address: `PO Box 1234`
-    }
+      address: `PO Box 1234`,
+    },
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -31,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `c08ui9nz1w33`,
-        accessToken: `uLgKVb9U7-cQnlKRw4nqMo2bXf9Eg1XLN4079WxQWms`,
+        spaceId: `kp2jz6350fzu`,
+        accessToken: `VySpc_9Q05wCWBj_Yg48aFR6C24-FdTXLqLpSKEixhA`,
       },
     },
     `gatsby-transformer-sharp`,
