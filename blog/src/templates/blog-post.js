@@ -15,10 +15,12 @@ const BlogPost = ({ data }) => {
 export default BlogPost;
 
 export  const pageQuery = graphql`
+
   query blogPostQuery($slug: String!) {
     contentfulPageBlogPost(slug: { eq: $slug }) {
       title
       slug
     }
   }
+
 `
