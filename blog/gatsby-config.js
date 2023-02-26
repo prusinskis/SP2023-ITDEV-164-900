@@ -7,6 +7,10 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   siteMetadata: {
     title: `SAP Blog`,
@@ -31,11 +35,11 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        //Contentful API Token
-        spaceId: `kp2jz6350fzu`,
-        accessToken: `VySpc_9Q05wCWBj_Yg48aFR6C24-FdTXLqLpSKEixhA`,
+        spaceId: `${process.env.SPACE_ID}`,
+        accessToken: `${process.env.ACCESS_TOKEN}`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
