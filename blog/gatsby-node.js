@@ -13,6 +13,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   return new Promise((resolve, reject) => {
     graphql(`
+    
       query MyAllContentfulBlogPost {
         allContentfulPageBlogPost {
           edges {
@@ -23,6 +24,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+    
     `).then(result => {
       if (result.errors) {
         reject(result.errors)
