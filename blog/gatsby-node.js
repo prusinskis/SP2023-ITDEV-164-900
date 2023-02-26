@@ -15,7 +15,7 @@ exports.createPages = async ({ graphql, actions }) => {
     graphql(`
     
       query MyAllContentfulBlogPost {
-        allContentfulPageBlogPost {
+        allContentfulBlogPost {
           edges {
             node {
               id
@@ -29,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
       if (result.errors) {
         reject(result.errors)
       }
-      result.data.allContentfulPageBlogPost.edges.forEach((edge) => {
+      result.data.allContentfulBlogPost.edges.forEach((edge) => {
         createPage({
           path: edge.node.slug,
           component: require.resolve("./src/templates/blog-post.js"),
