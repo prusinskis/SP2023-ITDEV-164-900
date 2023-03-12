@@ -52,7 +52,7 @@ export const query = graphql`
             }
           }
           heroImage {
-            gatsbyImage(
+            gatsbyImageData(
               layout: CONSTRAINED 
               placeholder: BLURRED
               width: 300
