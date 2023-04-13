@@ -40,7 +40,6 @@ export const Head = () => <Seo title="Home" />
 export default IndexPage
 
 export const query = graphql`
-
   query MyAllContentfulBlogPost {
     allContentfulBlogPost {
       edges {
@@ -64,5 +63,4 @@ export const query = graphql`
       }
     }
   }
-  
 `
