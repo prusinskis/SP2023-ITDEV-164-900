@@ -1,5 +1,4 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import {Link} from "gatsby"
 import styled, { ThemeConsumer } from 'styled-components'
 import { Flex } from 'rebass'
