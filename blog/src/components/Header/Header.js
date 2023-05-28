@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import {Link} from "gatsby"
 import styled, { ThemeConsumer } from 'styled-components'
 import { Flex } from 'rebass'
-import { Search } from 'sytled-icons/feather'
 import { H1 } from '../Heading'
 import { SearchButton } from '../Button'
 import { Section } from '../Section'
