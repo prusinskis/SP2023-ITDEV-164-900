@@ -14,7 +14,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `SAP Blog - with Netlify`,
-    description: `SP2023-ITDEV-164-900 Week 2 Activity 1`,
+    description: `SP2023-ITDEV-164-900`,
     author: `Sherise Prusinski`,
     siteUrl: `https://github.com/prusinskis/SP2023-ITDEV-164-900/`,
     contact: {
