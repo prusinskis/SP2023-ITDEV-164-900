@@ -39,13 +39,13 @@ const MediaQuery = styled.div `
     }
 `
 
-const NAV = styled(Flex)`
+const Nav = styled(Flex)`
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 `
 
-const Header= ({siteTitle}) => (
+export const Header= ({siteTitle}) => (
     <Outer>
     <Section flex>
         <Section width={1/12}
