@@ -62,12 +62,12 @@ const Header= ({siteTitle}) => (
                             {siteTitle}
                         </StyledLink>
                     </Title>
-                <MediaQuery>
-                    <StyledLink to="/"> Home</StyledLink>
-                    <StyledLink to="/about"> About</StyledLink>
-                    <StyledLink to="/contact">Contact</StyledLink>
-                </MediaQuery>
-                <SearchButton variant="contract" />
+                    <MediaQuery>
+                        <StyledLink to="/"> Home</StyledLink>
+                        <StyledLink to="/about"> About</StyledLink>
+                        <StyledLink to="/contact">Contact</StyledLink>
+                    </MediaQuery>
+                    <SearchButton variant="contract" />
                 </Nav>
         </Section>
     </Section>
