@@ -9,6 +9,6 @@ export const SearchButton = props => (
     </ThemeConsumer>
 )
 
-SearchButton.prototype = {
+SearchButton.propTypes = {
     variant: PropTypes.string
 }
