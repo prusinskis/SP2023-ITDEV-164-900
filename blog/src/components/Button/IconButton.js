@@ -10,10 +10,9 @@ const StyledButton = styled(BaseButton) `
 export const IconButton = styled(({ icon, ...rest }) => {
     let clone = React.cloneElement(icon, rest)
     return <StyledButton as={clone.type} {...rest} className={rest.className} />
-})'
+})
     // We could add styles here, but it is not necessary.
     // The main reason this is a styled component is to wrap the styled icon passed in as a prop.
-'
 
 IconButton.defaultProps = {
     size:24
